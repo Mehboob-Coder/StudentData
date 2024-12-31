@@ -13,6 +13,8 @@ from django.db.models import Sum,Window
 from django.db.models.functions import Coalesce
 from rest_framework.decorators import action
 
+
+
 class Signup(viewsets.ViewSet):
     serializer_class = UserSerializer
     queryset = User.objects.all()
